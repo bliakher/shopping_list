@@ -1,0 +1,24 @@
+<div class="table-container">
+    <table class="shopping-list">
+        <tr>
+            <th>Item</th>
+            <th>Amount</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        {foreach $table_data as $obj}
+        <tr id="item-id-{= $obj->id}">
+            <td>{= $obj->item}</td>
+            <td>{= $obj->amount}</td>
+            <td>
+                {if $obj->position !== count($table_data)}
+                <button type="button" class="down">V</button>
+                {/if}
+            </td>
+            <td><button type="button" class="edit">Edit</button></td>
+            <td><button type="button" class="remove">Remove</button></td>
+        </tr>
+        {/foreach}
+    </table>
+</div>

@@ -1,0 +1,157 @@
+body {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+header.page-header {
+    background-color: green;
+    color: white;
+    font-size: large;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
+    height: 10vh;
+    position: fixed;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 15vw;
+    
+}
+
+.main-content {
+    position: relative;
+    top: 15vh;
+}
+
+table.shopping-list, table.shopping-list th, table.shopping-list td{
+    border: solid 0.2px;
+    border-color: #D3D3D3;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px;
+}
+
+table.shopping-list tr:nth-of-type(2n) {
+    background-color: #DCDCDC;
+}
+
+.table-container {
+    display: block;
+    width: 70vw;
+    margin: auto;
+}
+
+table.shopping-list {
+    width: 100%;
+}
+
+table.shopping-list button {
+    border-radius: 2px;
+    border: none;
+    padding: 1vh;
+    margin: auto;
+}
+
+button.edit {
+    background-color: #ffd300;
+}
+
+button.remove {
+    color: white;
+    background-color: red;
+}
+
+button.switch {
+    color: white;
+    background-color: #0080ff;
+    position: relative;
+    top: 3vh;
+}
+
+.form-container {
+    display: block;
+    width: 70vw;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+form.add-item {
+    border: solid 0.2px #D3D3D3;
+    border-radius: 2px;
+}
+
+form.add-item .input {
+    display: inline-block;
+    margin: 1vw;
+}
+form.add-item .input input {
+    width: 100%;
+}
+form.add-item .input label {
+    margin-bottom: 2vh;
+}
+
+form.add-item .item {
+    width: 60%;
+}
+form.add-item .amount {
+    width: 30%;
+}
+
+form.add-item .button {
+    display: block;
+    width: 5vw;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+div#dialog {
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    top: 20vh;
+    left: 25vw;
+    right: 25vw;
+    margin: 0;
+    padding: 5vh;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+    background-color: white;
+    filter: none;
+}
+
+#dialog div * {
+    display: inline-block;
+    padding: 1vh;
+    margin: 0.5vh;
+}
+
+#dialog h1 {
+    font-size: medium;
+}
+
+#dialog p {
+    width: 10vw;
+}
+
+#dialog button {
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+#dialog #save {
+    background-color: green;
+}
+
+#dialog #cancel {
+    background-color: red;
+}
